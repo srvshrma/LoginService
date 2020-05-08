@@ -1,0 +1,9 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: login-service
+  cloud:
+    config:
+      uri: http://http://localhost:8888  
+ 
