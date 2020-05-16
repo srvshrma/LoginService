@@ -1,5 +1,7 @@
 package com.cognizant.loginService.service;
 
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +17,11 @@ public class LoginServiceImpl implements LoginService {
 		UserRole role = new UserRole();
 		role.getRole();
 		return repo.save(login);
+	}
+	@Override
+	public Optional<Login> findLoginById(int id) {
+		// TODO Auto-generated method stub
+		return repo.findById(id);
 	}
 
 }

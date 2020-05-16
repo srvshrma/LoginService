@@ -7,4 +7,6 @@ import com.cognizant.loginService.model.Login;
 @Repository
 public interface LoginRepository extends CrudRepository<Login, Integer>{
 
+	
+	
 }
